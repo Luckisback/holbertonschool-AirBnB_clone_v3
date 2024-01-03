@@ -20,7 +20,7 @@ def teardown_db(exception):
 
 @app.errorhandler(404)
 def handler_error(stat):
-    """returns a JSON-formatted 404 status code response"""
+    """returns a JSON-formatted 404 status code response """
     return jsonify({"error": "Not found"}), 404
 
 
